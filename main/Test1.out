@@ -1,0 +1,33 @@
+ ets Jan  8 2013,rst cause:1, boot mode:(3,1)
+
+load 0x40100000, len 7032, room 16
+tail 8
+chksum 0xa5
+load 0x3ffe8408, len 24, room 0
+tail 8
+chksum 0x1c
+load 0x3ffe8420, len 3336, room 0
+tail 8
+chksum 0x01
+csum 0x01
+I (43) boot: ESP-IDF v3.4-dev-389-gea4f93b7-dirty 2nd stage bootloader
+I (43) boot: compile time 04:00:32
+I (45) boot: SPI Speed      : 40MHz
+I (51) boot: SPI Mode       : DOUT
+I (57) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (69) boot: ## Label            Usage          Type ST Offset   Length
+I (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (103) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (115) boot: End of partition table
+I (121) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x14fc4 ( 8                                                                                                             5956) map
+I (172) esp_image: segment 1: paddr=0x00024fdc vaddr=0x40224fd4 size=0x05ae0 ( 2                                                                                                             3264) map
+I (183) esp_image: segment 2: paddr=0x0002aac4 vaddr=0x3ffe8000 size=0x003dc (                                                                                                                988) load
+I (184) esp_image: segment 3: paddr=0x0002aea8 vaddr=0x40100000 size=0x00080 (                                                                                                                128) load
+I (197) esp_image: segment 4: paddr=0x0002af30 vaddr=0x40100080 size=0x0448c ( 1                                                                                                             7548) load
+I (218) boot: Loaded app from partition at offset 0x10000
+I (244) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldow                                                                                                             n: 0| Intr:0
+I (249) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldow                                                                                                             n: 0| Intr:0
+I (260) main: Analysing your Heart Rate. Please Wait/n
+I (9763) main: Your Heart Rate is: 94 beats/min/n
